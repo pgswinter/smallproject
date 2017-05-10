@@ -1,0 +1,248 @@
+.amaris-btn{
+
+	cursor: pointer;
+	padding: 8px 12px;
+	border-style: solid;
+
+}
+/* Blue button */
+.amaris-btn.blue-btn.style_01-btn{
+
+	background-color: #fff;
+	border-color: #478FCC;
+	color: #478FCC;
+
+}
+.amaris-btn.blue-btn.style_02-btn{
+
+	background-color: #478FCC;
+	border-color: #478FCC;
+	color: #fff;
+
+}
+.amaris-btn.blue-btn:hover{
+
+	background-color: #3374BA;
+	border-color: #3374BA;
+	color: #fff;
+
+}
+.amaris-btn.blue-btn:checked,
+.amaris-btn.blue-btn:active,
+.amaris-btn.blue-btn:target{
+
+	background-color: #14499E;
+	border-color: #14499E;
+	color: #fff;
+
+}
+
+/* Green button */
+.amaris-btn.green-btn.style_01-btn{
+
+	background-color: #fff;
+	border-color: #4CAE4E;
+	color: #4CAE4E;
+
+}
+.amaris-btn.green-btn.style_02-btn{
+
+	background-color: #4CAE4E;
+	border-color: #4CAE4E;
+	color: #fff;
+
+}
+.amaris-btn.green-btn:hover{
+
+	background-color: #378E43;
+	border-color: #378E43;
+	color: #fff;
+
+}
+.amaris-btn.green-btn:checked,
+.amaris-btn.green-btn:active,
+.amaris-btn.green-btn:target{
+
+	background-color: #1E5E2F;
+	border-color: #1E5E2F;
+	color: #fff;
+
+}
+
+/* Orange button */
+.amaris-btn.orange-btn.style_01-btn{
+
+	background-color: #fff;
+	border-color: #F8971C;
+	color: #F8971C;
+
+}
+.amaris-btn.orange-btn.style_02-btn{
+
+	background-color: #F8971C;
+	border-color: #F8971C;
+	color: #fff;
+
+}
+.amaris-btn.orange-btn:hover{
+
+	background-color: #F37C20;
+	border-color: #F37C20;
+	color: #fff;
+
+}
+.amaris-btn.orange-btn:checked,
+.amaris-btn.orange-btn:active,
+.amaris-btn.orange-btn:target{
+
+	background-color: #E45325;
+	border-color: #E45325;
+	color: #fff;
+
+}
+
+/* Red button */
+.amaris-btn.red-btn.style_01-btn{
+
+	background-color: #fff;
+	border-color: #EF4437;
+	color: #EF4437;
+
+}
+.amaris-btn.red-btn.style_02-btn{
+
+	background-color: #EF4437;
+	border-color: #EF4437;
+	color: #fff;
+
+}
+.amaris-btn.red-btn:hover{
+
+	background-color: #D32E2E;
+	border-color: #D32E2E;
+	color: #fff;
+
+}
+.amaris-btn.red-btn:checked,
+.amaris-btn.red-btn:active,
+.amaris-btn.red-btn:target{
+
+	background-color: #B62025;
+	border-color: #B62025;
+	color: #fff;
+
+}
+
+/* Grey button */
+.amaris-btn.grey-btn{
+
+	background-color: #fff;
+	border-color: #757575;
+	color: #757575;
+
+}
+.amaris-btn.grey-btn:hover{
+
+	background-color: #757575;
+	border-color: #757575;
+	color: #fff;
+
+}
+.amaris-btn.grey-btn:checked,
+.amaris-btn.grey-btn:active,
+.amaris-btn.grey-btn:target{
+
+	background-color: #424242;
+	border-color: #424242;
+	color: #fff;
+
+}
+
+/* Light grey button */
+.amaris-btn.light-grey-btn{
+
+	background-color: #fff;
+	border-color: #eee;
+	color: #eee;
+
+}
+
+/* Circle button */
+.amaris-btn.circle-btn{
+
+	border-radius: 50%;
+
+}
+
+/* Rounded corner button */
+.amaris-btn.round-corner-btn{
+
+	border-radius: 0.8em;
+
+}
+
+/* Square button */
+.amaris-btn.square-btn{
+
+	border-radius: 0.5em
+
+}
+
+/* large button */
+.amaris-btn.amaris-lg-btn{
+
+	width: 80px;
+	height: 80px;
+	border-width: 5px;
+	font-size: 2em;
+
+}
+
+/* Medium button */
+.amaris-btn.amaris-md-btn{
+
+	width: 60px;
+	height: 60px;			
+	border-width: 4px;
+	font-size: 1.5em;
+
+}
+
+/* Small button */
+.amaris-btn.amaris-sm-btn{
+
+	width: 30px;
+	height: 30px;
+	border-width: 2px;
+	font-size: 1em;
+	padding: 0;
+
+}
+
+.amaris-btn.amaris-xs-btn{
+
+	width: 20px;
+	height: 20px;
+	border-width: 2px;
+	font-size: 0.5em;
+	padding: 0;
+
+}
+
+.amaris-btn.amaris-xxs-btn{
+
+	width: 10px;
+	height: 10px;
+	border-width: 1px;
+	font-size: 0.3em;
+	padding: 0;
+
+}
+
+.amaris-btn.amaris-default-size{
+
+	width: auto;
+	height: auto;
+	padding: 8px 12px;
+
+}

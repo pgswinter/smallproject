@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+
+		.maxtaSLD {
+		  height: 500px;
+		  overflow: hidden;
+		  position: relative; }
+		  .maxtaSLD ul {
+		    width: 100%; }
+		    .maxtaSLD ul li {
+		      float: left; }
+		      .maxtaSLD ul li img {
+		        width: 100%; }
+		      .maxtaSLD ul li .vide-wrap {
+		        width: 80%;
+		        float: left;
+		        padding-top: 5%;
+		        padding-left: 5%; }
+		        .maxtaSLD ul li .vide-wrap video {
+		          width: 80%; }
+		      .maxtaSLD ul li p {
+		        width: 20%;
+		        margin-top: 5%;
+		        float: left; }
+		  .maxtaSLD ol {
+		    margin-left: auto;
+		    margin-right: auto;
+		    left: 0;
+		    right: 0;
+		    width: 130px;
+		    height: 20px;
+		    position: absolute;
+		    bottom: 1em; }
+		    .maxtaSLD ol li {
+		      width: 20px;
+		      height: 20px;
+		      border: 2px solid #eee;
+		      float: left;
+		      margin: 0 3px;
+		      border-radius: 50%;
+		      color: transparent;
+		      cursor: pointer;
+		      position: relative;
+		      display: block; }
+		      .maxtaSLD ol li.active:after {
+		        display: block;
+		        content: '';
+		        width: 14px;
+		        height: 14px;
+		        background-color: #eee;
+		        position: absolute;
+		        top: 1px;
+		        left: 1px;
+		        border-radius: 50%; }
+		  .maxtaSLD .next-ctrl,
+		  .maxtaSLD .prev-ctrl {
+		    width: 50px;
+		    height: 50px;
+		    border: 2px solid #eee;
+		    position: absolute;
+		    background-color: transparent;
+		    top: calc(50% - 25px);
+		    color: #eee; }
+		  .maxtaSLD .next-ctrl {
+		    right: 1em; }
+		  .maxtaSLD .prev-ctrl {
+		    left: 1em; }
+
+		    .relaSLD > ul li {
+			    height: 91px;
+			    overflow: hidden;
+			    cursor: pointer;
+			    position: relative;
+			    border: 1px solid #8b8c90; }
+			.relaSLD > ul li:after {
+			      display: block;
+			      position: absolute;
+			      width: 100%;
+			      height: 100%;
+			      content: '';
+			      top: 0;
+			      left: 0;
+			      background-color: rgba(0, 0, 0, 0.69); }
+			.relaSLD > ul li.active:after {
+			      background-color: transparent; }
+			.relaSLD > ul li img {
+			      width: 100%; }
+
+	</style>
+</head>
+<body>
+	
+	<div class="caro-wrap maxtaSLD">
+						
+		<ul>
+			<li>
+				<img src="photos/02.jpg" alt="">
+			</li>
+			<li>
+				
+				<div class="vide-wrap">
+					<video width="100%" controls>
+						<source src="src/video/Faded.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero laboriosam iste, vel expedita quia repudiandae amet et, est sequi tempore!</p>	
+
+			</li>
+			<li>
+				
+				<img src="photos/03.jpg" alt="">
+
+			</li>
+			<li>
+				
+				<img src="photos/04.jpg" alt="">
+
+			</li>
+			<li>
+				
+				<img src="photos/05.jpg" alt="">
+
+			</li>
+		</ul>
+		<button class="next-ctrl ctrl-btn"><i class="fa fa-angle-right"></i></button>
+		<button class="prev-ctrl ctrl-btn"><i class="fa fa-angle-left"></i></button>
+
+	</div>
+	<div class="col-lg-4 pareBUL">
+					
+		<div class="row">
+			<div class="relaSLD">
+				
+				<ul>
+					<li class="col-lg-6 active">
+						
+						<div class="row">
+							<img src="photos/03.jpg" alt="">
+						</div>
+			
+					</li>
+					<li class="col-lg-6">
+						
+						<div class="row">
+							<img src="photos/04.jpg" alt="">
+						</div>
+			
+					</li>
+					<li class="col-lg-6">
+						
+						<div class="row">
+							<img src="photos/01.jpg" alt="">
+						</div>
+			
+					</li>
+					<li class="col-lg-6">
+						
+						<div class="row">
+							<img src="photos/02.jpg" alt="">
+						</div>
+			
+					</li>
+					<li class="col-lg-6">
+						
+						<div class="row">
+							<img src="photos/08.jpg" alt="">
+						</div>
+			
+					</li>
+					<li class="col-lg-6">
+						
+						<div class="row">
+							<img src="photos/09.jpg" alt="">
+						</div>
+			
+					</li>
+					<li class="col-lg-6">
+						
+						<div class="row">
+							<img src="photos/10.jpg" alt="">
+						</div>
+			
+					</li>
+					<li class="col-lg-6">
+						
+						<div class="row">
+							<img src="photos/20.jpg" alt="">
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+			</div>
+		</div>
+
+	</div>
+	<script src="maxta-slider.js"></script>
+</body>
+</html>

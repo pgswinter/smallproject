@@ -1,0 +1,385 @@
+/* circle Style */
+.ama-checkbox.circle{
+
+	background-color: #454547;
+	text-align: center;
+	cursor: pointer;
+	color: #8b8c90;
+	border-radius: 50%;
+
+}
+
+/* set Size */
+.ama-checkbox.xl.circle{
+
+	width: 120px;
+	height: 120px;
+	border: 20px solid #8b8c90;
+
+}
+.ama-checkbox.lg.circle{
+
+	width: 60px;
+	height: 60px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #8b8c90;
+
+}
+.ama-checkbox.sm.circle{
+
+	width: 30px;
+	height: 30px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #8b8c90;
+
+}
+.ama-checkbox.xs.circle{
+
+	width: 15px;
+	height: 15px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #8b8c90;
+
+}
+
+.ama-checkbox.xl.circle i {
+	
+	font-size: 5em;
+
+}
+.ama-checkbox.lg.circle i {
+	
+	font-size: 2.5em;
+
+}
+.ama-checkbox.sm.circle i {
+	
+	font-size: 1em;
+
+}
+.ama-checkbox.xs.circle i {
+	
+	font-size: 0.5em;
+	display: block;
+
+}	
+
+.ama-checkbox.circle.checked{
+
+	/*background-color: #ef8b1b;*/
+
+}
+.ama-checkbox.circle.xs.checked:after{
+
+	content:'';
+	display: block;
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	top: 1px;
+	left: 1px;
+	background-color: #ef8b1b;
+
+}
+
+/* Square Style */
+.ama-checkbox.square{
+
+	background-color: #454547;
+	text-align: center;
+	cursor: pointer;
+	color: #ef8b1b;
+
+}
+
+/* set Size */
+.ama-checkbox.xl.square{
+
+	width: 120px;
+	height: 120px;
+	border-width: 20px;
+	border-style: solid;
+	border-color: #8b8c90;
+
+}
+.ama-checkbox.lg.square{
+
+	width: 60px;
+	height: 60px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #8b8c90;
+
+}
+.ama-checkbox.sm.square{
+
+	width: 30px;
+	height: 30px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #8b8c90;
+
+}
+.ama-checkbox.xs.square{
+
+	width: 15px;
+	height: 15px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #8b8c90;
+
+}
+
+.ama-checkbox.xl.square i {
+	
+	font-size: 5em;
+
+}
+.ama-checkbox.lg.square i {
+	
+	font-size: 2.5em;
+
+}
+.ama-checkbox.sm.square i {
+	
+	font-size: 1em;
+
+}
+.ama-checkbox.xs.square i {
+	
+	font-size: 0.5em;
+	display: block;
+
+}	
+
+.ama-checkbox.square.checked i{
+
+	display: none;
+
+}
+
+/* Switch Style */
+
+/* set Size */
+.ama-checkbox.xl.switch{
+
+	width: 120px;
+	height: 64px;
+
+}
+.ama-checkbox.lg.switch{
+
+	width: 60px;
+	height: 30px;
+
+}
+.ama-checkbox.sm.switch{
+
+	width: 30px;
+	height: 15px;
+
+}
+.ama-checkbox.xs.switch{
+
+	width: 15px;
+	height: 8px;
+
+}
+.ama-checkbox{
+
+	position: relative;
+	
+
+}
+
+/* bar Style */
+.ama-checkbox.xl.switch .bar{
+	
+	width: 100%;
+	height: 100%;
+	border-radius: 32px;
+	background-color: #8b8c90;
+	cursor: pointer;
+
+}
+.ama-checkbox.lg.switch .bar{
+	
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	background-color: #8b8c90;
+	cursor: pointer;
+
+}
+.ama-checkbox.sm.switch .bar{
+	
+	width: 100%;
+	height: 100%;
+	border-radius: 7.5px;
+	background-color: #8b8c90;
+	cursor: pointer;
+
+}
+.ama-checkbox.xs.switch .bar{
+	
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background-color: #8b8c90;
+	cursor: pointer;
+
+}
+
+/* the-dot Style */
+.ama-checkbox.xl.switch .the-dot{
+
+	width: 60px;
+	height: 60px;
+
+}
+.ama-checkbox.lg.switch .the-dot{
+
+	width: 26px;
+	height: 26px;
+
+}
+.ama-checkbox.sm.switch .the-dot{
+
+	width: 11px;
+	height: 11px;
+
+}
+.ama-checkbox.xs.switch .the-dot{
+
+	width: 4px;
+	height: 4px;
+
+}
+.ama-checkbox.switch .the-dot{
+
+	border-radius: 50%;
+	position: absolute;
+	background-color: #fff;
+	left: 2px;
+	top: 2px;
+
+}
+.ama-checkbox.switch.add-animate .the-dot{
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+
+}
+.ama-checkbox.switch.checked .the-dot{
+	
+	left: initial;	
+	right: 2px;
+	
+}
+.ama-checkbox.switch.checked .bar{
+	
+	background-color: #ef8b1b;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #8b8c90;
+	
+}
+
+/* end switch */
+
+.blue.bl-for-bd{
+
+	border-color: #54a4d9 !important;
+
+}
+.blue.bl-for-txt{
+
+	color: #54a4d9;
+
+}
+.blue.bl-for-bg{
+
+	background-color: #54a4d9;
+
+}
+
+/* end blue */
+
+.chili.ch-for-bd{
+
+	border-color: #ec5028 !important;
+
+}
+.chili.ch-for-txt{
+
+	color: #ec5028;
+
+}
+.chili.ch-for-bg{
+
+	background-color: #ec5028;
+
+}
+
+/* end chili */
+
+.purple.pu-for-bd{
+
+	border-color: #a32380 !important;
+
+}
+.purple.pu-for-txt{
+
+	color: #a32380;
+
+}
+.purple.pu-for-bg{
+
+	background-color: #a32380;
+
+}
+
+/* end purple */
+
+.orange.or-for-bd{
+
+	border-color: #f19027 !important;
+
+}
+.orange.or-for-txt{
+
+	color: #f19027;
+
+}
+.orange.or-for-bg{
+
+	background-color: #f19027;
+
+}
+
+/* end orange */
+
+.green.gr-for-bd{
+
+	border-color: #aebd3e !important;
+
+}
+.green.gr-for-txt{
+
+	color: #aebd3e;
+
+}
+.green.gr-for-bg{
+
+	background-color: #aebd3e;
+
+}
+
+/* end green */
