@@ -1,63 +1,60 @@
 var gulp = require('gulp'),
-	connect = require('gulp-connect'),
-	open = require('gulp-open'),
-	browserify = require('gulp-browserify'),
-	concat = require('gulp-concat'),
-	concatcss = require('gulp-concat-css'),
 	sass = require('gulp-sass'),
-	cssmin = require('gulp-cssmin'),
 	jsmin = require('gulp-jsmin'),
-	merge = require('merge-stream'),
-	minify = require('gulp-minify-css'),
-	sourcemaps = require('gulp-sourcemaps'),
 	cssminbundle = require('gulp-cssmin'),
 	rename = require('gulp-rename'),
-	notify = require('gulp-notify'),
-	cleanCSS = require('gulp-clean-css'),
-	port = process.env.port || 3031
+	uglify = require('gulp-uglify'),
+	pump = require('pump'),
+	concat = require('gulp-concat'),
+	pug = require('gulp-pug')
 
+gulp.task('compress', function (cb) {
+	pump([
+		gulp.src('./dist/js/*.js'),
+		uglify(),
+		rename({suffix:'.min'}),
+		gulp.dest('./dist/js')
+	],
+    cb
+  );
+});
 
-gulp.task('jsmin',function(){
-
-	gulp.src('./AMARIS CAREER/src/**/*.js')
-		.pipe(jsmin())
-		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest('./AMARIS CAREER/dist'))
-
-})
-
-gulp.task('cssmin',function(){
-
-
-	gulp.src(['.dist/css/**/*.css','!.dist/css/**/*.min.css'])
-		.pipe(cssmin())
-		.pipe(rename({suffix:'.min'}))
-		.pipe(gulp.dest('.dist/css/'))
-
-
-})
+gulp.task('scripts', function() {
+  return gulp.src('./src/js/*.js')
+    .pipe(concat('bundle.js'))
+    .pipe(gulp.dest('./dist/js'));
+});
 
 gulp.task('cssminbundle',function(){
 
-	gulp.src('.dist/css/bundle.css')
+	gulp.src('./dist/css/bundle.css')
 		.pipe(cssminbundle())
 		.pipe(rename({suffix:'.min'}))
-		.pipe(gulp.dest('.dist/css'))
+		.pipe(gulp.dest('./dist/css'))
 
 })
 
 gulp.task('sass',function(){
 
-	return gulp.src('.src/sass/**/*.sass')
+	return gulp.src('./src/sass/**/*.sass')
 		.pipe(sass().on('error',sass.logError))
-		.pipe(gulp.dest('.dist/css'))
+		.pipe(gulp.dest('./dist/css'))
 
 })
 
 gulp.task('sass:watch',function(){
 
-	gulp.watch('.src/sass/**/*.sass',['sass'])
+	gulp.watch('./src/sass/**/*.sass',['sass'])
 
 })
 
-gulp.task('rftcss',['sass','sass:watch','cssminbundle'])
+gulp.task('pug',function(){
+
+	return gulp.src('./pug/**/*.pug')
+		.pipe(pug({pretty: true}))
+		.pipe(gulp.dest('./dist'))
+
+})
+
+gulp.task('dev',['sass','sass:watch','cssminbundle','scripts','pug'])
+gulp.task('product',['cssminbundle','compress'])

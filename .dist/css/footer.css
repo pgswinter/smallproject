@@ -1,0 +1,44 @@
+/**  **/
+/* Color */
+/* Font */
+footer.main-foot,
+.for-abs {
+  padding: 35px 0;
+  background-color: #454547;
+  color: #8b8c90; }
+  footer.main-foot a,
+  .for-abs a {
+    color: #8b8c90;
+    font-family: SegoeUI; }
+    footer.main-foot a:hover,
+    .for-abs a:hover {
+      color: #fff;
+      text-decoration: none; }
+  footer.main-foot h3,
+  footer.main-foot h4,
+  .for-abs h3,
+  .for-abs h4 {
+    margin: 10px 0;
+    color: #ef8b1b; }
+  footer.main-foot h3,
+  .for-abs h3 {
+    float: left; }
+  footer.main-foot ul,
+  .for-abs ul {
+    float: left;
+    margin-left: 20px;
+    margin-top: -10px; }
+    footer.main-foot ul li,
+    .for-abs ul li {
+      float: left; }
+      footer.main-foot ul li a,
+      .for-abs ul li a {
+        font-size: 36pt;
+        display: block;
+        margin-right: 10px; }
+
+.for-abs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
